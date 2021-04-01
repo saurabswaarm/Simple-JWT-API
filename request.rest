@@ -1,0 +1,28 @@
+GET http://localhost:3000/posts
+Authentication: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3lsZSIsImlhdCI6MTYxMjk5Nzg3NiwiZXhwIjoxNjEyOTk3OTA2fQ.6P-Z8siUwd7LmGT9E76hKJwmEHE8BdsFmUJRFGwGd4k
+
+###
+
+POST http://localhost:3001/signup
+Content-Type: application/json
+
+
+{
+    "username":"Kyle",
+    "password":"Kyle"
+}
+
+###
+
+POST http://localhost:3001/login 
+Content-Type: application/json
+
+{
+    "username":"Kyle",
+    "password":"Kyle"
+}
+
+###
+
+GET http://localhost:3000/posts
+Authentication:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3lsZSIsImlhdCI6MTYxMjk5Nzg3NiwiZXhwIjoxNjEyOTk3OTA2fQ.6P-Z8siUwd7LmGT9E76hKJwmEHE8BdsFmUJRFGwGd4k
